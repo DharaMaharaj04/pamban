@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pamban Bridge</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#29badc',
+            secondary: '#29badc',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-white text-gray-800">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-3xl font-bold text-primary">Pamban Bridge</h1>
+      <nav class="space-x-6 text-sm font-semibold">
+        <a href="#history" class="hover:text-primary">History</a>
+        <a href="#engineering" class="hover:text-primary">Engineering</a>
+        <a href="#modern" class="hover:text-primary">Modern Era</a>
+        <a href="#significance" class="hover:text-primary">Significance</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative h-[70vh] bg-cover bg-center" style="background-image: url('https://i.pinimg.com/736x/c0/58/f6/c058f65e20e19387d067bdad4d90bd54.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+      <div class="text-center text-white px-4">
+        <h2 class="text-4xl md:text-6xl font-bold mb-4">The Sea Bridge That Dared to Dream</h2>
+        <p class="text-lg md:text-xl">Connecting Rameswaram to the mainland since 1914</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Overview Section -->
+  <section class="max-w-5xl mx-auto px-4 py-16" id="history">
+    <h3 class="text-2xl font-bold text-primary mb-4">Overview & Historical Background</h3>
+    <p class="mb-4">The Pamban Bridge connects Rameswaram Island to mainland Tamil Nadu. Inaugurated in 1914, it was India's first sea bridge and served as the only land connection to Rameswaram for over 70 years.</p>
+    <p class="mb-4">Originally constructed to meet the spiritual and transport demands of Rameswaram, the bridge was a marvel of early 20th-century engineering, standing strong against the extreme coastal conditions.</p>
+  </section>
+
+  <!-- Engineering Section -->
+  <section class="bg-gray-100 py-16" id="engineering">
+     <div class="grid md:grid-cols-2 gap-8">
+    <div class="max-w-5xl mx-auto px-4">
+      <h3 class="text-2xl font-bold text-primary mb-4">Structural and Engineering Details</h3>
+      <ul class="list-disc pl-6 space-y-2 text-gray-700">
+        <li>Design Type: Cantilever and Scherzer Rolling Lift Span</li>
+        <li>Lift span length: 66 meters (manually operated, now electrical)</li>
+        <li>Bridge stands just 12.5 meters above sea level</li>
+        <li>Survived harsh environments including the 1964 Rameswaram cyclone</li>
+        <li>143 piers based on concrete-filled iron cylinders for corrosion resistance</li>
+      </ul>
+    </div>
+    <div>
+          <img src="https://i.pinimg.com/736x/60/b2/dc/60b2dc142c6857a09582b5f65bb05517.jpg" alt="New Pamban Bridge" class="h-96 shadow-lg">
+        </div>
+      </div>
+  </section>
+
+  <!-- Interactive Modern Timeline -->
+  <section class="py-16" id="modern">
+    <div class="max-w-5xl mx-auto px-4">
+      <h3 class="text-2xl font-bold text-primary mb-6">Modernization & Future Vision</h3>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="space-y-4">
+          <p>The New Pamban Bridge under construction is set to be India’s first vertical-lift railway bridge, with cutting-edge features like GPS, remote operations, and 22-meter clearance for ships.</p>
+          <ul class="list-disc pl-6">
+            <li>Double-track electrified railway</li>
+            <li>Sensor and cyclone alert systems</li>
+            <li>Expected completion: 2025</li>
+          </ul>
+        </div>
+        <div>
+          <img src="https://i.pinimg.com/736x/1e/28/dd/1e28ddfe34cde62b8b56dd9b1deb99c8.jpg" alt="New Pamban Bridge" class="rounded-xl shadow-lg">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cultural Significance -->
+  <section class=" py-16" id="significance">
+    <div class="max-w-5xl mx-auto px-4">
+      <h3 class="text-2xl font-bold mb-6">Cultural & Religious Significance</h3>
+      <p class="mb-4">The Pamban Bridge is not just a feat of engineering — it is a spiritual pathway for millions. Linking pilgrims to the Ramanathaswamy Temple, it is part of the sacred Char Dham Yatra and holds immense emotional and cultural value.</p>
+      <p class="mb-4">Its presence in films, photos, and stories makes it a symbol of resilience, devotion, and unity between technology and tradition.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-secondary text-white text-center py-6">
+    <p>&copy; 2025 Pamban Bridge Heritage. All rights reserved.</p>
+  </footer>
+
+  <!-- Interactive Scroll Effect -->
+  <script>
+    const navLinks = document.querySelectorAll('nav a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        document.querySelector(link.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
